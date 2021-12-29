@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.menu-bar{
+    background: rgb(245, 170, 245);
+    text-align: center;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 1.5px;
+}
+.menu-bar ul li a{
+    text-decoration:none ;
+    color: #fff;
+}
+.active, .menu-bar ul li:hover{
+    background: purple;
+    border-radius: 3px ;
+}
+.menu-bar .fa{
+    margin-right: 3px;
+}
+.sub-menu-1{
+    display: none;
+    border-radius: 8px;
+}
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: purple;
+    margin-top: 1px;
+    margin-left:-15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align:left
+} 
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: plum ;
+}
+.icon{
+    width: 90px;
+    float: left;
+    height: 55px;
+}
+.logo{
+    color: #fff;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+.section{
+    width: 100%;
+}
+.section .container{
+    width: 80%;
+    display: block;
+    margin: 0px auto;
+    padding: 50px 0px;
+}
+.container .title{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.container .title h1{
+    text-transform: uppercase;
+    font-size: 35px;
+    color: #89cddf;
+}
+.container .title h1::after{
+    content: "";
+    height:5px;
+    width: 100px;
+    background-color: #8990f0;
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+}
+.content{
+    float: left;
+    width: 55%;
+}
+.image-section{
+    float: right;
+    width: 40%;
+}
+.image-section img{
+    width: 100%;
+    height: auto;
+}
+.content .article h3{
+    color: #fff);
+    font-size: 17px;
+}
+.content .article p{
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(247, 241, 241);
+}
+.content .article .button{
+    margin-top: 50px;
+}
+.content .article .button a{
+    text-decoration: none;
+    padding: 8px 25px;
+    background-color: #079aa5;
+    border-radius: 40px;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1.2px;
+}
+.content .article .button a:hover{
+    color: #fff;
+    background-color: #91d9df;
+    transition: 1s ease;
+}
+.icon a{
+    text-decoration: none;
+    color:#fff;
+}
+.icon ion-icon{
+    color: #fff;
+    font-size: 30px;
+    padding-left: 5px;
+    padding-top: 5px;
+    transition: .3s ease;
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+.icon ion-icon:hover{
+    color: rgb(197, 162, 230);
+    transition: 1s ease;
+    transform: rotate(360deg);
+}
+@media screen and (max-width: 768px){
+    .section .container{
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+    .content{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .image-section{
+        float: none;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .image-section img{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    .container .title h1{
+        text-align: center;
+        font-size: 30px;
+    }
+    .container .article .button{
+        text-align: center;
+    }
+    .container .article .button a{
+        padding: 6px 15px;
+        font-size: 16px;
+    }
+    .container .social i{
+        font-size: 19px;
+        height: 35px;
+        width: 35px;
+        line-height: 35px;
+    }
+}
